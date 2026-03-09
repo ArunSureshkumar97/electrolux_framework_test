@@ -1,0 +1,150 @@
+2026-03-09 18:32:21,577 | http_client | INFO | REQUEST -> method=GET url=https://jsonplaceholder.typicode.com/posts payload=None
+2026-03-09 18:32:22,000 | http_client | INFO | RESPONSE -> status=200 body=[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate p
+2026-03-09 18:32:22,004 | http_client | INFO | REQUEST -> method=GET url=https://jsonplaceholder.typicode.com/posts/1 payload=None
+2026-03-09 18:32:22,065 | http_client | INFO | RESPONSE -> status=200 body={
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2026-03-09 18:32:22,065 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:32:22,066 | http_client | INFO | REQUEST -> method=POST url=https://jsonplaceholder.typicode.com/posts payload={'title': 'SDET API Challenge', 'body': 'Validating maintainable pytest framework', 'userId': 101}
+2026-03-09 18:32:22,479 | http_client | INFO | RESPONSE -> status=201 body={
+  "title": "SDET API Challenge",
+  "body": "Validating maintainable pytest framework",
+  "userId": 101,
+  "id": 101
+}
+2026-03-09 18:32:22,479 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:32:22,482 | http_client | INFO | REQUEST -> method=POST url=https://jsonplaceholder.typicode.com/posts payload={'title': 'Another Post', 'body': 'Additional payload for test coverage', 'userId': 55}
+2026-03-09 18:32:22,720 | http_client | INFO | RESPONSE -> status=201 body={
+  "title": "Another Post",
+  "body": "Additional payload for test coverage",
+  "userId": 55,
+  "id": 101
+}
+2026-03-09 18:32:22,721 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:32:22,724 | http_client | INFO | REQUEST -> method=DELETE url=https://jsonplaceholder.typicode.com/posts/1 payload=None
+2026-03-09 18:32:23,093 | http_client | INFO | RESPONSE -> status=200 body={}
+2026-03-09 18:32:23,093 | api_handler | INFO | Schema validation passed for model=DeleteResponse
+2026-03-09 18:32:23,097 | http_client | INFO | REQUEST -> method=GET url=https://jsonplaceholder.typicode.com/posts/999999 payload=None
+2026-03-09 18:32:23,156 | http_client | INFO | RESPONSE -> status=404 body={}
+2026-03-09 18:50:10,541 | http_client | INFO | REQUEST -> method=GET url=https://jsonplaceholder.typicode.com/posts payload=None
+2026-03-09 18:50:10,936 | http_client | INFO | RESPONSE -> status=200 body=[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate p
+2026-03-09 18:50:10,942 | http_client | INFO | REQUEST -> method=GET url=https://jsonplaceholder.typicode.com/posts/1 payload=None
+2026-03-09 18:50:10,997 | http_client | INFO | RESPONSE -> status=200 body={
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2026-03-09 18:50:10,997 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:50:11,000 | http_client | INFO | REQUEST -> method=POST url=https://jsonplaceholder.typicode.com/posts payload={'title': 'FRAMEWORK TEST', 'body': 'Validating maintainable pytest framework', 'userId': 101}
+2026-03-09 18:50:11,245 | http_client | INFO | RESPONSE -> status=201 body={
+  "title": "FRAMEWORK TEST",
+  "body": "Validating maintainable pytest framework",
+  "userId": 101,
+  "id": 101
+}
+2026-03-09 18:50:11,245 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:50:11,249 | http_client | INFO | REQUEST -> method=POST url=https://jsonplaceholder.typicode.com/posts payload={'title': 'Another Post', 'body': 'Additional payload for test coverage', 'userId': 55}
+2026-03-09 18:50:11,517 | http_client | INFO | RESPONSE -> status=201 body={
+  "title": "Another Post",
+  "body": "Additional payload for test coverage",
+  "userId": 55,
+  "id": 101
+}
+2026-03-09 18:50:11,518 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:50:11,523 | http_client | INFO | REQUEST -> method=PUT url=https://jsonplaceholder.typicode.com/posts/1 payload={'id': 1, 'title': 'Updated Title', 'body': 'Updated Body', 'userId': 99}
+2026-03-09 18:50:12,139 | http_client | INFO | RESPONSE -> status=200 body={
+  "id": 1,
+  "title": "Updated Title",
+  "body": "Updated Body",
+  "userId": 99
+}
+2026-03-09 18:50:12,141 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:50:12,144 | http_client | INFO | REQUEST -> method=DELETE url=https://jsonplaceholder.typicode.com/posts/1 payload=None
+2026-03-09 18:50:12,381 | http_client | INFO | RESPONSE -> status=200 body={}
+2026-03-09 18:50:12,382 | api_handler | INFO | Schema validation passed for model=DeleteResponse
+2026-03-09 18:50:12,385 | http_client | INFO | REQUEST -> method=GET url=https://jsonplaceholder.typicode.com/posts/999999 payload=None
+2026-03-09 18:50:12,441 | http_client | INFO | RESPONSE -> status=404 body={}
+2026-03-09 18:50:12,447 | http_client | INFO | REQUEST -> method=PUT url=https://jsonplaceholder.typicode.com/posts/999999 payload={'id': 1, 'title': 'Updated Title', 'body': 'Updated Body', 'userId': 99}
+2026-03-09 18:50:13,103 | http_client | INFO | RESPONSE -> status=500 body=TypeError: Cannot read properties of undefined (reading 'id')
+    at update (/app/node_modules/json-server/lib/server/router/plural.js:262:24)
+    at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+    at next (/app/node_modules/express/lib/router/route.js:137:13)
+    at next (/app/node_modules/express/lib/router/route.js:131:14)
+    at Route.dispatch (/app/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/app/node_mod
+2026-03-09 18:54:50,975 | http_client | INFO | REQUEST -> method=GET url=https://jsonplaceholder.typicode.com/posts payload=None
+2026-03-09 18:54:51,366 | http_client | INFO | RESPONSE -> status=200 body=[
+  {
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate p
+2026-03-09 18:54:51,373 | http_client | INFO | REQUEST -> method=GET url=https://jsonplaceholder.typicode.com/posts/1 payload=None
+2026-03-09 18:54:51,435 | http_client | INFO | RESPONSE -> status=200 body={
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+2026-03-09 18:54:51,436 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:54:51,440 | http_client | INFO | REQUEST -> method=POST url=https://jsonplaceholder.typicode.com/posts payload={'title': 'FRAMEWORK TEST', 'body': 'Validating maintainable pytest framework', 'userId': 101}
+2026-03-09 18:54:51,698 | http_client | INFO | RESPONSE -> status=201 body={
+  "title": "FRAMEWORK TEST",
+  "body": "Validating maintainable pytest framework",
+  "userId": 101,
+  "id": 101
+}
+2026-03-09 18:54:51,699 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:54:51,702 | http_client | INFO | REQUEST -> method=POST url=https://jsonplaceholder.typicode.com/posts payload={'title': 'Another Post', 'body': 'Additional payload for test coverage', 'userId': 55}
+2026-03-09 18:54:51,984 | http_client | INFO | RESPONSE -> status=201 body={
+  "title": "Another Post",
+  "body": "Additional payload for test coverage",
+  "userId": 55,
+  "id": 101
+}
+2026-03-09 18:54:51,985 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:54:51,988 | http_client | INFO | REQUEST -> method=PUT url=https://jsonplaceholder.typicode.com/posts/1 payload={'id': 1, 'title': 'Updated Title', 'body': 'Updated Body', 'userId': 99}
+2026-03-09 18:54:52,386 | http_client | INFO | RESPONSE -> status=200 body={
+  "id": 1,
+  "title": "Updated Title",
+  "body": "Updated Body",
+  "userId": 99
+}
+2026-03-09 18:54:52,387 | api_handler | INFO | Schema validation passed for model=PostResponse
+2026-03-09 18:54:52,390 | http_client | INFO | REQUEST -> method=DELETE url=https://jsonplaceholder.typicode.com/posts/1 payload=None
+2026-03-09 18:54:52,650 | http_client | INFO | RESPONSE -> status=200 body={}
+2026-03-09 18:54:52,651 | api_handler | INFO | Schema validation passed for model=DeleteResponse
+2026-03-09 18:54:52,654 | http_client | INFO | REQUEST -> method=GET url=https://jsonplaceholder.typicode.com/posts/999999 payload=None
+2026-03-09 18:54:52,734 | http_client | INFO | RESPONSE -> status=404 body={}
