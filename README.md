@@ -1,4 +1,4 @@
-# SDET API Challenge Framework
+# Framework
 
 Pytest-based API automation framework for testing:
 
