@@ -1,4 +1,0 @@
-pytest
-requests
-pydantic>=2
-pytest-html
