@@ -1,2 +1,0 @@
-# electrolux_framework_test
-electrolux_framework_test
